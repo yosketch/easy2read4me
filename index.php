@@ -13,11 +13,12 @@
 <!-- <link rel="shortcut icon" href=""> -->
 </head>
 <body>
+
 <h1>easy2read4me</h1>
 
 <div id="input-box" class="boxes">
 <h2>Input</h2>
-<form action="" name="input" method="get">
+<form name="input" method="get" action="">
 <textarea rows="20" cols="60" id="input-text">
 </textarea>
 <br>
@@ -27,7 +28,7 @@
 
 <div id="output-box" class="boxes">
 <h2>Output</h2>
-<form action="" name="output" method="get">
+<form name="output" method="" action="">
 <textarea rows="20" cols="60" id="output-text">
 </textarea>
 </form>
