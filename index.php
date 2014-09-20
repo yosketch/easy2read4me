@@ -35,6 +35,18 @@
 </div>
 
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+<!--
+function doAction() {
+  var text = $('#input-text').val();
+  $.getJSON('convert.php', {text:text}, callback);
+}
+
+function callback(result) {
+  $('#output-text').text(result.text);
+}
+//-->
+</script>
 </body>
 </html>
 
