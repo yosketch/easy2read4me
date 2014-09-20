@@ -14,6 +14,25 @@
 </head>
 <body>
 <h1>easy2read4me</h1>
+
+<div id="input-box" class="boxes">
+<h2>Input</h2>
+<form action="" name="input" method="get">
+<textarea rows="20" cols="60" id="input-text">
+</textarea>
+<br>
+<input type="submit" name="submit" value=" convert ">
+</form>
+</div>
+
+<div id="output-box" class="boxes">
+<h2>Output</h2>
+<form action="" name="output" method="get">
+<textarea rows="20" cols="60" id="output-text">
+</textarea>
+</form>
+</div>
+
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </body>
 </html>
