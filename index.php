@@ -19,10 +19,10 @@
 <div id="input-box" class="boxes">
 <h2>Input</h2>
 <form name="input" method="get" action="">
-<textarea rows="20" cols="60" id="input-text">
+<textarea rows="20" cols="60" id="input-text" name="input">
 </textarea>
 <br>
-<input type="submit" name="submit" value=" convert ">
+<input type="button" onclick="doAction();" value=" convert ">
 </form>
 </div>
 
@@ -39,11 +39,14 @@
 <!--
 function doAction() {
   var text = $('#input-text').val();
-  $.getJSON('convert.php', {text:text}, callback);
-}
-
-function callback(result) {
-  $('#output-text').text(result.text);
+  $.ajax({
+    type: "POST",
+    url: 'convert.php',
+    data: {text:text},
+    success: function(data, textStatus){
+      $('#output-text').text(data.text);
+    }
+  });
 }
 //-->
 </script>
